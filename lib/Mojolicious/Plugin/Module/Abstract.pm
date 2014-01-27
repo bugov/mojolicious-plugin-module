@@ -12,6 +12,7 @@ sub init {
   $self->init_config($app, $path);
   $self->init_routes($app);
   $self->init_templates($app);
+  $self->init_helpers($app);
   $self->startup($app);
 }
 
@@ -54,3 +55,95 @@ sub init_config {
 }
 
 1;
+
+__END__
+
+=pod
+
+=head1 NAME
+
+Mojolicious::Plugin::Module::Abstract - Abstract class for modules.
+
+=head1 OVERVIEW
+
+Abstract class for modules provides method to init some aspects of modules such as routes,
+templates, configs, etc. Use it to define your modules.
+
+=head2 Methods
+
+=head3 init($self, $app, $path)
+
+Initialize module.
+
+=over
+
+=item $app
+
+Current mojolicious application object.
+
+=item $path
+
+Path to this module in filesystem.
+
+=back
+
+=head3 init_templates($self, $app)
+
+Add templates paths to mojolicious renderer.
+
+=over
+
+=item $app
+
+Current mojolicious application object.
+
+=back
+
+=head3 init_config($self, $app, $path)
+
+Looks for C<./conf/module.conf> config in JSON format an load it. Also trying to load local
+config for this module from application C<conf/vendor/module_name.conf>(JSON too). Configs will
+be merged.
+
+You can get module's config this way:
+
+  $app->module->get('module_name')->config->{some_config_key}
+
+Or directly from module object.
+
+=over
+
+=item $app
+
+Current mojolicious application object.
+
+=item $path
+
+Path to this module in filesystem. Will be in C<config->{path}>.
+
+=back
+
+=head3 init_routes($self, $app)
+
+Override this method in your module and define routes.
+
+=head3 init_helpers($self, $app)
+
+Override this method in your module and define helpers.
+
+=head3 startup($self, $app)
+
+Override this method in your module if module needs some more initialization code.
+
+=head1 SEE ALSO
+
+L<Mojolicious::Plugin::Module>, L<Mojolicious::Guides>, L<http://mojolicio.us>.
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2014, Georgy Bazhukov.
+
+This program is free software, you can redistribute it and/or modify it under
+the terms of the Artistic License version 2.0.
+
+=cut

@@ -75,6 +75,11 @@ Get module by C<$name>.
 
 =back
 
+=head1 SEE ALSO
+
+L<Mojolicious::Plugin::Module::Abstract>, L<Mojolicious::Plugin::Module::Manager>,
+L<Mojolicious::Guides>, L<http://mojolicio.us>.
+
 =head1 COPYRIGHT AND LICENSE
 
 Copyright (C) 2014, Georgy Bazhukov.
