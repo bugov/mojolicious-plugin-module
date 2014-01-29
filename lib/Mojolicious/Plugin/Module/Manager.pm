@@ -46,3 +46,68 @@ sub get {
 }
 
 1;
+
+__END__
+
+=pod
+
+=head1 NAME
+
+Mojolicious::Plugin::Module::Manager - module manager for Mojolicious.
+
+=head1 OVERVIEW
+
+Module manager contains modules and provides methods for modules' access.
+
+=head2 Methods
+
+=head3 init($self, $app, $conf)
+
+=over
+
+=item $app
+
+Mojolicious application.
+
+=item $conf
+
+Keys: C<conf_dir> - directory with C<app.conf>, C<mod_dir> - directory with modules.
+
+=back
+
+=head3 add($self, $name, $module)
+
+=over
+
+=item $name
+
+Module name (package).
+
+=item $module
+
+Module object or undef.
+
+=back
+
+=head3 get($self, $name)
+
+=over
+
+=item $name
+
+Module name (package).
+
+=back
+
+=head1 SEE ALSO
+
+L<Mojolicious::Plugin::Module>, L<Mojolicious::Guides>, L<http://mojolicio.us>.
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2014, Georgy Bazhukov.
+
+This program is free software, you can redistribute it and/or modify it under
+the terms of the Artistic License version 2.0.
+
+=cut
