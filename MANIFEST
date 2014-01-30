@@ -1,0 +1,10 @@
+Build.PL
+lib/Mojolicious/Plugin/Module.pm
+lib/Mojolicious/Plugin/Module/Abstract.pm
+lib/Mojolicious/Plugin/Module/Manager.pm
+LICENSE
+MANIFEST
+README
+Makefile.PL
+META.yml
+META.json

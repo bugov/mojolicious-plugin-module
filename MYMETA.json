@@ -1,0 +1,52 @@
+{
+   "abstract" : "Mojolicious plugin modular development.",
+   "author" : [
+      "Georgy Bazhukov <gosha@bugov.net>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.4202",
+   "keywords" : [
+      "Plugin",
+      "Module",
+      "Mojolicious"
+   ],
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Mojolicious-Plugin-Module",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.40"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : "0",
+            "Hash::Merge::Simple" : "0.051",
+            "Module::Load" : "0",
+            "Mojolicious" : "4",
+            "perl" : "5.014"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ],
+      "repository" : {
+         "url" : "https://github.com/bugov/mojolicious-plugin-module"
+      }
+   },
+   "version" : "0.01"
+}

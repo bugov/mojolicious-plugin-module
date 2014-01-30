@@ -1,2 +1,9 @@
 *.komodoproject
 .komodotools
+.natural
+*.tmp
+Build
+_build
+blib
+*.bak
+*.tar.gz
