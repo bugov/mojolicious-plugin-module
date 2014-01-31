@@ -7,3 +7,4 @@ _build
 blib
 *.bak
 *.tar.gz
+Mojolicious-Plugin-Module-*
