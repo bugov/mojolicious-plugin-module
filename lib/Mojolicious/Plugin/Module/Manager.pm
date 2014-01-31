@@ -58,7 +58,7 @@ Mojolicious::Plugin::Module::Manager - module manager for Mojolicious.
 
 =head1 OVERVIEW
 
-Module manager contains modules and provides methods for modules' access.
+Module manager contains modules and provides methods for access.
 
 =head2 Methods
 

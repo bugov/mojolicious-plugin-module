@@ -67,7 +67,7 @@ directories.
 C<$name> - required parameter. Defines package of module. For example "Vendor::ModuleName".
 
 C<$module> - optional parameter. Module object which be finded as C<$name> in module manager.
-If <$module> does not defined C<$name> will be load.
+If <$module> does not defined C<$name> will be loaded.
 
 =item get($name)
 

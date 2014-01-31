@@ -66,7 +66,7 @@ Mojolicious::Plugin::Module::Abstract - Abstract class for modules.
 
 =head1 OVERVIEW
 
-Abstract class for modules provides method to init some aspects of modules such as routes,
+Abstract class for modules provides methods to init some aspects of modules such as routes,
 templates, configs, etc. Use it to define your modules.
 
 =head2 Methods
