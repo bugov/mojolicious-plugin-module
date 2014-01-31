@@ -39,6 +39,20 @@
          }
       }
    },
+   "provides" : {
+      "Mojolicious::Plugin::Module" : {
+         "file" : "lib/Mojolicious/Plugin/Module.pm",
+         "version" : "0.01"
+      },
+      "Mojolicious::Plugin::Module::Abstract" : {
+         "file" : "lib/Mojolicious/Plugin/Module/Abstract.pm",
+         "version" : 0
+      },
+      "Mojolicious::Plugin::Module::Manager" : {
+         "file" : "lib/Mojolicious/Plugin/Module/Manager.pm",
+         "version" : 0
+      }
+   },
    "release_status" : "stable",
    "resources" : {
       "license" : [

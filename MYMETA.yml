@@ -17,6 +17,16 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Mojolicious-Plugin-Module
+provides:
+  Mojolicious::Plugin::Module:
+    file: lib/Mojolicious/Plugin/Module.pm
+    version: 0.01
+  Mojolicious::Plugin::Module::Abstract:
+    file: lib/Mojolicious/Plugin/Module/Abstract.pm
+    version: 0
+  Mojolicious::Plugin::Module::Manager:
+    file: lib/Mojolicious/Plugin/Module/Manager.pm
+    version: 0
 requires:
   Carp: 0
   Hash::Merge::Simple: 0.051

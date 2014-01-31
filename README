@@ -40,10 +40,16 @@ METHODS
         "Vendor::ModuleName".
 
         $module - optional parameter. Module object which be finded as $name
-        in module manager. If <$module> does not defined $name will be load.
+        in module manager. If <$module> does not defined $name will be
+        loaded.
 
     get($name)
         Get module by $name.
+
+SEE ALSO
+    Mojolicious::Plugin::Module::Abstract,
+    Mojolicious::Plugin::Module::Manager, Mojolicious::Guides,
+    <http://mojolicio.us>.
 
 COPYRIGHT AND LICENSE
     Copyright (C) 2014, Georgy Bazhukov.
