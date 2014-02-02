@@ -23,6 +23,7 @@ sub init {
   close $fh;
   
   $self->add($_) for @{ $app_conf->{modules} };
+  
   $app->helper(module => sub { $self });
 }
 
@@ -38,7 +39,10 @@ sub add {
   
   @::INC = ("$path/lib", @::INC);
   load $name;
-  $name->new->init($self->app, $path);
+  
+  my $mod = $name->new;
+  $mod->init($self->app, $path);
+  $self->modules->{$name} = $mod;
 }
 
 sub get {
