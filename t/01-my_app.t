@@ -17,7 +17,7 @@ $t->get_ok('/assets/vendor/module/css/style.css')->status_is(200)->content_like(
 $t->get_ok('/mods')->status_is(200)->content_is('ok');
 $t->get_ok('/mods_fail')->status_is(200)->content_is('fail');
 
-#cleanup();
+cleanup();
 done_testing();
 
 sub cleanup {
