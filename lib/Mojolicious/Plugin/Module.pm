@@ -1,6 +1,7 @@
 package Mojolicious::Plugin::Module;
 use Mojo::Base 'Mojolicious::Plugin';
 use Mojolicious::Plugin::Module::Manager;
+use Mojolicious::Plugin::Module::Assets;
 our $VERSION = "0.01";
 
 sub register {
@@ -11,6 +12,7 @@ sub register {
   $conf->{mod_dir}  = 'mod'  unless exists $conf->{mod_dir};
   
   Mojolicious::Plugin::Module::Manager->new->init($app, $conf);
+  Mojolicious::Plugin::Module::Assets->new->init($app);
 }
 
 1;
