@@ -7,8 +7,8 @@ sub startup {
 
   # Define path to confings, modules
   $self->plugin('Module', {
-    conf_dir => './t/apps/my_app/conf',
-    mod_dir => './t/apps/my_app/mod'
+    conf_dir => './conf',
+    mod_dir => './mod'
   });
 
   # Router

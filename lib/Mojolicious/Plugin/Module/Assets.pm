@@ -9,7 +9,7 @@ sub init {
   my ($self, $app) = @_;
   # Does not support Mojolicious Lite.
   return if $app->isa('Mojolicious::Lite');
-  my $app_path = "$FindBin::Bin/..";
+  my $app_path = $app->home;
   while (my($name, $mod) = each %{ $app->module->modules }) {
     my $path = $mod->config->{path};
     dircopy("$path/assets", "$app_path/public/assets") or
@@ -18,3 +18,16 @@ sub init {
 }
 
 1;
+
+__END__
+
+=pod
+
+=head1 NAME
+
+Mojolicious::Plugin::Module::Assets - work with assets.
+
+=head1 OVERVIEW
+
+If your module has some static files, which should be able from public directory, use C<assets>
+folder.

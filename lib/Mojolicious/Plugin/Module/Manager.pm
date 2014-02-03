@@ -12,7 +12,7 @@ has 'app';
 
 sub init {
   my ($self, $app, $conf) = @_;
-  my $path = $app->isa('Mojolicious::Lite') ? $FindBin::Bin : "$FindBin::Bin/..";
+  my $path = $app->home;
   my $conf_dir = $conf->{conf_dir};
   $self->mod_dir($conf->{mod_dir});
   $self->app($app);
@@ -32,7 +32,7 @@ sub add {
   croak "Trying to reload module \"$name\"!\n" if exists $self->modules->{$name};
   return $self->modules->{$name} = $module if $module;
   
-  my $dir = $self->app->isa('Mojolicious::Lite') ? $FindBin::Bin : "$FindBin::Bin/..";
+  my $dir = $self->app->home;
   my $path = decamelize $name;
   $path =~ s/-/\//;
   $path = $dir.'/'.$self->mod_dir.'/'.$path;

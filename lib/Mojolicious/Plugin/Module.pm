@@ -3,7 +3,7 @@ use Mojo::Base 'Mojolicious::Plugin';
 use Mojolicious::Plugin::Module::Manager;
 use Mojolicious::Plugin::Module::Assets;
 our $VERSION = "0.01";
-
+use Data::Dumper;
 sub register {
   my ($self, $app, $conf) = @_;
   
