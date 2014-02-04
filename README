@@ -22,6 +22,7 @@ OVERVIEW
     "mod/bugov/common_module" directories.
 
   Structure of module
+      assets                                  # Module's public files.
       conf                                    # Some configs.
         module.conf                           # Main config of this module.
       lib
@@ -48,7 +49,8 @@ METHODS
 
 SEE ALSO
     Mojolicious::Plugin::Module::Abstract,
-    Mojolicious::Plugin::Module::Manager, Mojolicious::Guides,
+    Mojolicious::Plugin::Module::Manager,
+    Mojolicious::Plugin::Module::Assets, Mojolicious::Guides,
     <http://mojolicio.us>.
 
 COPYRIGHT AND LICENSE

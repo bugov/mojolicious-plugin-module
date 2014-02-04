@@ -42,10 +42,13 @@
    "provides" : {
       "Mojolicious::Plugin::Module" : {
          "file" : "lib/Mojolicious/Plugin/Module.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       },
       "Mojolicious::Plugin::Module::Abstract" : {
          "file" : "lib/Mojolicious/Plugin/Module/Abstract.pm"
+      },
+      "Mojolicious::Plugin::Module::Assets" : {
+         "file" : "lib/Mojolicious/Plugin/Module/Assets.pm"
       },
       "Mojolicious::Plugin::Module::Manager" : {
          "file" : "lib/Mojolicious/Plugin/Module/Manager.pm"
@@ -60,5 +63,5 @@
          "url" : "https://github.com/bugov/mojolicious-plugin-module"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }

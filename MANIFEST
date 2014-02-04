@@ -6,8 +6,11 @@ example/lite_app/mod/vendor/module/lib/Vendor/Module.pm
 example/my_app/conf/app.conf
 example/my_app/lib/MyApp.pm
 example/my_app/lib/MyApp/Example.pm
-example/my_app/log/development.log
+example/my_app/mod/vendor/module/assets/css/style.css
+example/my_app/mod/vendor/module/assets/vendor/module/css/style.css
 example/my_app/mod/vendor/module/lib/Vendor/Module.pm
+example/my_app/public/assets/css/style.css
+example/my_app/public/assets/vendor/module/css/style.css
 example/my_app/public/index.html
 example/my_app/script/my_app
 example/my_app/t/basic.t
@@ -15,6 +18,7 @@ example/my_app/templates/example/welcome.html.ep
 example/my_app/templates/layouts/default.html.ep
 lib/Mojolicious/Plugin/Module.pm
 lib/Mojolicious/Plugin/Module/Abstract.pm
+lib/Mojolicious/Plugin/Module/Assets.pm
 lib/Mojolicious/Plugin/Module/Manager.pm
 LICENSE
 Makefile.PL
@@ -30,7 +34,8 @@ t/apps/lite_app/mod/vendor/module/lib/Vendor/Module.pm
 t/apps/my_app/conf/app.conf
 t/apps/my_app/lib/MyApp.pm
 t/apps/my_app/lib/MyApp/Example.pm
-t/apps/my_app/log/development.log
+t/apps/my_app/mod/vendor/module/assets/css/style.css
+t/apps/my_app/mod/vendor/module/assets/vendor/module/css/style.css
 t/apps/my_app/mod/vendor/module/lib/Vendor/Module.pm
 t/apps/my_app/public/index.html
 t/apps/my_app/script/my_app

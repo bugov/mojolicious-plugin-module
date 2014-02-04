@@ -2,8 +2,8 @@ package Mojolicious::Plugin::Module;
 use Mojo::Base 'Mojolicious::Plugin';
 use Mojolicious::Plugin::Module::Manager;
 use Mojolicious::Plugin::Module::Assets;
-our $VERSION = "0.01";
-use Data::Dumper;
+our $VERSION = "0.02";
+
 sub register {
   my ($self, $app, $conf) = @_;
   
@@ -48,6 +48,7 @@ directories.
 
 =head2 Structure of module
 
+  assets                                  # Module's public files.
   conf                                    # Some configs.
     module.conf                           # Main config of this module.
   lib
