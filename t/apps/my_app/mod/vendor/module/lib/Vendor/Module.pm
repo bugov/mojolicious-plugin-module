@@ -1,6 +1,5 @@
 package Vendor::Module;
 use Mojo::Base 'Mojolicious::Plugin::Module::Abstract';
-use Data::Dumper;
 
 sub init_routes {
   my ($self, $app) = @_;

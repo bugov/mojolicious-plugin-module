@@ -80,7 +80,7 @@ Get module by C<$name>.
 =head1 SEE ALSO
 
 L<Mojolicious::Plugin::Module::Abstract>, L<Mojolicious::Plugin::Module::Manager>,
-L<Mojolicious::Guides>, L<http://mojolicio.us>.
+L<Mojolicious::Plugin::Module::Assets>, L<Mojolicious::Guides>, L<http://mojolicio.us>.
 
 =head1 COPYRIGHT AND LICENSE
 

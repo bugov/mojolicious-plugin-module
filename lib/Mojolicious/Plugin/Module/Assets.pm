@@ -29,5 +29,20 @@ Mojolicious::Plugin::Module::Assets - work with assets.
 
 =head1 OVERVIEW
 
-If your module has some static files, which should be able from public directory, use C<assets>
-folder.
+If your module has some static files, which should be able from C<public> directory, use C<assets>
+folder. On each application startup assets will be added to C<./public/assets> of your
+application (does not work with Mojolicious::Lite).
+
+=head1 SEE ALSO
+
+L<Mojolicious::Plugin::Module::Abstract>, L<Mojolicious::Plugin::Module::Manager>,
+L<Mojolicious::Guides>, L<http://mojolicio.us>.
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2014, Georgy Bazhukov.
+
+This program is free software, you can redistribute it and/or modify it under
+the terms of the Artistic License version 2.0.
+
+=cut
