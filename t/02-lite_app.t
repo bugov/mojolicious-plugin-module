@@ -2,8 +2,8 @@
 use Mojolicious::Lite;
 
 plugin 'Module', {
-  conf_dir => './apps/lite_app/conf',
-  mod_dir => './apps/lite_app/mod'
+  conf_dir => './apps/lite_app/config',
+  mod_dir => './apps/lite_app/module'
 };
 
 get '/' => sub {

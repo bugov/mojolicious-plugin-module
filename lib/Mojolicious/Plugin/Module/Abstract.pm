@@ -1,7 +1,7 @@
 package Mojolicious::Plugin::Module::Abstract;
 use Mojo::Base -base;
 use Mojo::Util 'decamelize';
-use Mojo::JSON 'j';
+use YAML;
 use Hash::Merge::Simple qw/merge/;
 
 has 'routes';
@@ -39,18 +39,19 @@ sub init_config {
   $pkg =~ s/-/\//;
   my $fh;
   
-  open($fh, "./conf/$pkg.conf") and do {
+  open($fh, "./config/$pkg.yaml") and do {
     local $/;
-    $self->config(j<$fh>);
+    my ($data) = Load(<$fh>);
+    $self->config($data);
     close $fh;
   };
   $self->config({ %{$self->config}, path => $path });
   
-  open($fh, $self->config->{path}.'/conf/module.conf') and do {
+  open($fh, $self->config->{path}.'/config/module.yaml') and do {
     local $/;
-    my $config = j<$fh>;
+    my ($data) = Load(<$fh>);
     close $fh;
-    $self->config(merge $config, $self->config);
+    $self->config(merge $data, $self->config);
   };
 }
 

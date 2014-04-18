@@ -7,9 +7,9 @@ our $VERSION = "0.02";
 sub register {
   my ($self, $app, $conf) = @_;
   
-  $conf ||= { conf_dir => 'conf', mod_dir  => 'mod' };
-  $conf->{conf_dir} = 'conf' unless exists $conf->{conf_dir};
-  $conf->{mod_dir}  = 'mod'  unless exists $conf->{mod_dir};
+  $conf ||= { conf_dir => 'config', mod_dir  => 'module' };
+  $conf->{conf_dir} = 'config' unless exists $conf->{conf_dir};
+  $conf->{mod_dir}  = 'module'  unless exists $conf->{mod_dir};
   
   Mojolicious::Plugin::Module::Manager->new->init($app, $conf);
   Mojolicious::Plugin::Module::Assets->new->init($app);
