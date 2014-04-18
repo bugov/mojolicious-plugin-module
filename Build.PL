@@ -5,7 +5,7 @@ use Module::Build;
 
 Module::Build->new(
   module_name         => 'Mojolicious::Plugin::Module',
-  dist_abstract       => 'Mojolicious plugin modular development.',
+  dist_abstract       => 'Mojolicious plugin for modular development.',
   license             => 'perl',
   dist_author         => 'Georgy Bazhukov <gosha@bugov.net>',
   dist_version_from   => 'lib/Mojolicious/Plugin/Module.pm',
