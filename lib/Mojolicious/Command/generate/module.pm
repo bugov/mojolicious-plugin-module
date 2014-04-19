@@ -10,7 +10,6 @@ sub run {
   my ($self, $mod) = @_;
   $mod ||= 'MyModule';
 
-  # Prevent bad applications
   die <<EOF unless $mod =~ /^[A-Z](?:\w|::)+$/;
 Your module name has to be a well formed (CamelCase) Perl module name like "MyModule".
 EOF
