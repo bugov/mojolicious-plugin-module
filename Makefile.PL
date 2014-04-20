@@ -10,6 +10,7 @@ WriteMakefile
   'VERSION_FROM' => 'lib/Mojolicious/Plugin/Module.pm',
   'PREREQ_PM' => {
                    'Test::More' => 0,
+                   'YAML' => 0,
                    'Module::Load' => 0,
                    'Hash::Merge::Simple' => '0.051',
                    'Mojolicious' => 4,

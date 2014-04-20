@@ -8,3 +8,4 @@ blib
 *.bak
 *.tar.gz
 Mojolicious-Plugin-Module-*
+*.log

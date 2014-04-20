@@ -77,7 +77,7 @@ Mojolicious application.
 
 =item $conf
 
-Keys: C<conf_dir> - directory with C<app.conf>, C<mod_dir> - directory with modules.
+Keys: C<conf_dir> - directory with C<application.yaml>, C<mod_dir> - directory with modules.
 
 =back
 

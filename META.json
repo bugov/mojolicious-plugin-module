@@ -1,5 +1,5 @@
 {
-   "abstract" : "Mojolicious plugin modular development.",
+   "abstract" : "Mojolicious plugin for modular development.",
    "author" : [
       "Georgy Bazhukov <gosha@bugov.net>"
    ],
@@ -35,14 +35,18 @@
             "Hash::Merge::Simple" : "0.051",
             "Module::Load" : "0",
             "Mojolicious" : "4",
+            "YAML" : "0",
             "perl" : "5.014"
          }
       }
    },
    "provides" : {
+      "Mojolicious::Command::generate::module" : {
+         "file" : "lib/Mojolicious/Command/generate/module.pm"
+      },
       "Mojolicious::Plugin::Module" : {
          "file" : "lib/Mojolicious/Plugin/Module.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       },
       "Mojolicious::Plugin::Module::Abstract" : {
          "file" : "lib/Mojolicious/Plugin/Module/Abstract.pm"
@@ -63,5 +67,5 @@
          "url" : "https://github.com/bugov/mojolicious-plugin-module"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }

@@ -16,22 +16,23 @@ example/my_app/script/my_app
 example/my_app/t/basic.t
 example/my_app/templates/example/welcome.html.ep
 example/my_app/templates/layouts/default.html.ep
+lib/Mojolicious/Command/generate/module.pm
 lib/Mojolicious/Plugin/Module.pm
 lib/Mojolicious/Plugin/Module/Abstract.pm
 lib/Mojolicious/Plugin/Module/Assets.pm
 lib/Mojolicious/Plugin/Module/Manager.pm
 LICENSE
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
 META.json
 META.yml
 README
 t/00-load.t
 t/01-my_app.t
 t/02-lite_app.t
-t/apps/lite_app/conf/app.conf
-t/apps/lite_app/mod/vendor/module/lib/Vendor/Module.pm
-t/apps/my_app/conf/app.conf
+t/apps/lite_app/config/application.yaml
+t/apps/lite_app/module/vendor/module/lib/Vendor/Module.pm
+t/apps/my_app/conf/application.yaml
 t/apps/my_app/lib/MyApp.pm
 t/apps/my_app/lib/MyApp/Example.pm
 t/apps/my_app/mod/vendor/module/assets/css/style.css

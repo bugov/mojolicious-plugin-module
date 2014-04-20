@@ -102,8 +102,8 @@ Current mojolicious application object.
 
 =head3 init_config($self, $app, $path)
 
-Looks for C<./conf/module.conf> config in JSON format an load it. Also trying to load local
-config for this module from application C<conf/vendor/module_name.conf>(JSON too). Configs will
+Looks for C<./config/module.conf> config in YAML format an load it. Also trying to load local
+config for this module from application C<config/vendor/module_name.yaml>(YAML too). Configs will
 be merged.
 
 You can get module's config this way:

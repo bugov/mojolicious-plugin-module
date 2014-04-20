@@ -1,5 +1,10 @@
 Revision history for Mojolicious::Plugin::Module
 
+0.03  20-04-2014
+  - Add module generator command for Mojolicious;
+  - Use YAML instead of JSON;
+  - Change default path for modules and configs.
+
 0.02  04-02-2014
   - Fix module manager;
   - Add assets.

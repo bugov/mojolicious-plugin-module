@@ -9,14 +9,15 @@ Module::Build->new(
   license             => 'perl',
   dist_author         => 'Georgy Bazhukov <gosha@bugov.net>',
   dist_version_from   => 'lib/Mojolicious/Plugin/Module.pm',
-  build_requires => { 'Test::More' => 0, },
-  configure_requires => { 'Module::Build' => '0.40', },
+  build_requires      => { 'Test::More' => 0, },
+  configure_requires  => { 'Module::Build' => '0.40', },
   requires => {
-    'perl' => 5.014,
-    'Module::Load' => 0,
-    'Carp' => 0,
-    'Mojolicious' => 4,
-    'Hash::Merge::Simple' => 0.051
+    'perl'                => 5.014,
+    'Module::Load'        => 0,
+    'Carp'                => 0,
+    'Mojolicious'         => 4,
+    'Hash::Merge::Simple' => 0.051,
+    'YAML'                => 0,
   },
   meta_merge => {
     resources => {
@@ -26,4 +27,4 @@ Module::Build->new(
   },
   add_to_cleanup     => [],
   create_makefile_pl => 'traditional',
-)->create_build_script()
+)->create_build_script();

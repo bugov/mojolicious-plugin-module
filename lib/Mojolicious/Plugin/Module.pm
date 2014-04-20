@@ -2,7 +2,7 @@ package Mojolicious::Plugin::Module;
 use Mojo::Base 'Mojolicious::Plugin';
 use Mojolicious::Plugin::Module::Manager;
 use Mojolicious::Plugin::Module::Assets;
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 sub register {
   my ($self, $app, $conf) = @_;
@@ -34,23 +34,25 @@ After
 
   $app->plugin('Module');
 
-Mojolicious looks for C<conf/app.conf> where you can define (in JSON format) modules which
+Mojolicious looks for C<config/application.yaml> where you can define (in YAML format) modules which
 should be used.
 
-For example C<app.conf> contains
+For example C<application.yaml> contains
 
-  {
-    "modules": ["Bugov::User", "Bugov::CommonModule"]
-  }
+  ---
+  modules:
+    - Bugov::User
+    - Bugov::CommonModule
+  
 
-Two modules will used. They should be located in C<mod/bugov/user> and C<mod/bugov/common_module>
+Two modules will used. They should be located in C<module/bugov/user> and C<module/bugov/common_module>
 directories.
 
 =head2 Structure of module
 
   assets                                  # Module's public files.
-  conf                                    # Some configs.
-    module.conf                           # Main config of this module.
+  config                                  # Some configs.
+    module.yaml                           # Main config of this module.
   lib
     Vendor
       ModuleName
