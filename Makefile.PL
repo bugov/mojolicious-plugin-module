@@ -14,6 +14,7 @@ WriteMakefile
                    'Module::Load' => 0,
                    'Hash::Merge::Simple' => '0.051',
                    'Mojolicious' => 4,
+                   'File::Copy::Recursive' => 0,
                    'Carp' => 0
                  }
 )
