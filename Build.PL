@@ -18,6 +18,7 @@ Module::Build->new(
     'Mojolicious'         => 4,
     'Hash::Merge::Simple' => 0.051,
     'YAML'                => 0,
+    'File::Copy::Recursive' => 0,
   },
   meta_merge => {
     resources => {
