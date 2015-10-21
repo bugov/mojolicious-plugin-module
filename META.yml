@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   Module::Build: 0.40
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4202, CPAN::Meta::Converter version 2.120351'
+generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921'
 keywords:
   - Plugin
   - Module
@@ -23,7 +23,7 @@ provides:
     version: 0
   Mojolicious::Plugin::Module:
     file: lib/Mojolicious/Plugin/Module.pm
-    version: 0.03
+    version: 0.04
   Mojolicious::Plugin::Module::Abstract:
     file: lib/Mojolicious/Plugin/Module/Abstract.pm
     version: 0
@@ -35,6 +35,7 @@ provides:
     version: 0
 requires:
   Carp: 0
+  File::Copy::Recursive: 0
   Hash::Merge::Simple: 0.051
   Module::Load: 0
   Mojolicious: 4
@@ -43,4 +44,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: https://github.com/bugov/mojolicious-plugin-module
-version: 0.03
+version: 0.04

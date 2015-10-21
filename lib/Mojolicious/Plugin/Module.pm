@@ -2,7 +2,7 @@ package Mojolicious::Plugin::Module;
 use Mojo::Base 'Mojolicious::Plugin';
 use Mojolicious::Plugin::Module::Manager;
 use Mojolicious::Plugin::Module::Assets;
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 sub register {
   my ($self, $app, $conf) = @_;
